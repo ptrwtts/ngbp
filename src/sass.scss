@@ -9,19 +9,19 @@
  * Only the required elements of Twitter Bootstrap are imported
  */
 
-@import '../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins';
-@import '../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/variables';
-@import '../../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/buttons';
+@import '../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins';
+@import '../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/variables';
+@import '../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/buttons';
 
 /**
  * Next, we import our app-wide styles
  */
 
-@import '../app/app.scss'; 
+@import 'app/app.scss'; 
 
 /**
  * Finally, we import custom styles from any components
  * In the future, this should be done automatically
  */
 
-@import '../app/demo/demo.scss';
+@import 'app/demo/demo.scss';

@@ -227,7 +227,7 @@ module.exports = function ( grunt ) {
 
     /**
      * `grunt-contrib-sass` handles our SASS compilation and uglification automatically.
-     * Only our `main.scss` file is included in compilation; all other files
+     * Only our `sass.scss` file is included in compilation; all other files
      * must be imported from this file.
      */
     sass: {
