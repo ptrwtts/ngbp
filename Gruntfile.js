@@ -234,6 +234,9 @@ module.exports = function ( grunt ) {
       build: {
         files: {
           '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css': '<%= app_files.sass %>'
+        },
+        options: {
+          cacheLocation: 'build/.sass-cache'
         }
       },
       compile: {
@@ -241,7 +244,8 @@ module.exports = function ( grunt ) {
           '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css': '<%= app_files.scss %>'
         },
         options: {
-          style: 'compressed'
+          style: 'compressed',
+          cacheLocation: 'build/.sass-cache'
         }
       }
     },
