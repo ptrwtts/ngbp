@@ -319,7 +319,7 @@ Boom!
 
 ## Credit
 
-This project was orginally forked from [ngBoiler](https://github.com/ngbp/ngbp) by [@joshdmiller](https://github.com/joshdmiller). Most credit goes to him.
+This project was orginally forked from [ngBoilerplate](https://github.com/ngbp/ngbp) by [@joshdmiller](https://github.com/joshdmiller). Most credit goes to him.
 
 ## Key Modifications
 
