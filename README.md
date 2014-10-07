@@ -1,5 +1,3 @@
-# [ngBoilerplate](http://joshdmiller.github.com/ng-boilerplate) [![Build Status](https://api.travis-ci.org/ngbp/ngbp.png?branch=v0.3.2-release)](https://travis-ci.org/ngbp/ngbp)
-
 An opinionated kickstarter for [AngularJS](http://angularjs.org) projects.
 
 ***
@@ -9,15 +7,15 @@ An opinionated kickstarter for [AngularJS](http://angularjs.org) projects.
 Install Node.js and then:
 
 ```sh
-$ git clone git://github.com/joshdmiller/ng-boilerplate
-$ cd ng-boilerplate
+$ git clone git://github.com/ptrwtts/ngbp
+$ cd ngbp
 $ sudo npm -g install grunt-cli karma bower
 $ npm install
 $ bower install
 $ grunt watch
 ```
 
-Finally, open `file:///path/to/ng-boilerplate/build/index.html` in your browser.
+Finally, open `file:///path/to/ngbp/build/index.html` in your browser.
 
 Happy hacking!
 
@@ -147,7 +145,7 @@ from GitHub, or merge the branch into your existing repository. Assuming you're
 starting from scratch, simply clone this repository using git:
 
 ```sh
-$ git clone git://github.com/joshdmiller/ng-boilerplate my-project-name
+$ git clone git://github.com/ptrwtts/ngbp my-project-name
 $ cd my-project-name
 ```
 
@@ -313,65 +311,18 @@ expected, open the `bin/index.html` file in your browser. Voila!
 ### Live Reload!
 
 `ngBoilerplate` also includes [Live Reload](http://livereload.com/), so you no
-longer have to refresh your page after making changes! You need a Live Reload
-browser plugin for this:
+longer have to refresh your page after making changes! 
 
-- Chrome - [Chrome Webstore](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
-- Firefox - [Download from Live Reload](http://download.livereload.com/2.0.8/LiveReload-2.0.8.xpi)
-- Safari - [Download from Live Reload](http://download.livereload.com/2.0.9/LiveReload-2.0.9.safariextz)
-- Internet Explorer - Surely you jest.
-
-Note that if you're using the Chrome version with `file://` URLs (as is the
-default with `ngBoilerplate`) you need to tell Live Reload to allow it. Go to
-`Menu -> Tools -> Extensions` and check the "Allow access to file URLs" box next
-to the Live Reload plugin.
-
-When you load your page, click the Live Reload icon in your toolbar and
-everything should work magically. w00t!
-
-If you'd prefer to not install a browser extension, then you must add the
-following to the end of the `body` tag in `index.html`:
-
-```html
-<script src="http://localhost:35729/livereload.js"></script>
-```
+It is automatically inculded in the build index.html.
 
 Boom!
 
-## Roadmap
+## Credit
 
-This is a project that is not broad in scope, so there's not really much of a
-wish list here. But I would like to see a couple of things:
+This project was orginally forked from [ngBoiler](https://github.com/ngbp/ngbp) by [@joshdmiller](https://github.com/joshdmiller). Most credit goes to him.
 
-I'd like it to be a little simpler. I want this to be a universal starting
-point. If someone is starting a new AngularJS project, she should be able to
-clone, merge, or download its source and immediately start doing what she needs
-without renaming a bunch of files and methods or deleting spare parts. What I
-have works for a first release, but I just think there is a little too much here
-right now.
+## Key Modifications
 
-I'd also like to see a simple generator. Nothing like Yeoman, as there already
-is one of those, but just something that allows the user to say "I want
-Bootstrap but not Font Awesome and my app is called 'coolApp'. Gimme." Perhaps a
-custom download builder like UI Bootstrap has. Like that. Then again, perhaps
-some Yeoman generators wouldn't be out of line. I don't know. What do you think?
-
-Naturally, I am open to all manner of ideas and suggestions. See the
-"Contributing" section below.
-
-### To Do
-
-See the [issues list](http://github.com/joshdmiller/ng-boilerplate/issues). And
-feel free to submit your own!
-
-### Contributing
-
-This is an opinionated kickstarter, but the opinions are fluid and
-evidence-based. Don't like the way I did something? Think you know of a better
-way? Have an idea to make this more useful? Let me know! You can contact me
-through all the usual channels or you can open an issue on the GitHub page. If
-you're feeling ambitious, you can even submit a pull request - how thoughtful
-of you!
-
-So join the team! We're good people.
-
+ - Replace LESS with SASS (grunt-contrib-sass, bootstrap-sass-official)
+ - Bake LiveReload support into the build process
+ - Accept some unanswered pull requests (see early commit history)
