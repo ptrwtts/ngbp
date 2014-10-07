@@ -82,8 +82,6 @@ ng-boilerplate/
   |  |  |- <static files>
   |  |- common/
   |  |  |- <reusable code>
-  |  |- less/
-  |  |  |- main.less
   |- vendor/
   |  |- angular-bootstrap/
   |  |- bootstrap/
@@ -254,8 +252,8 @@ changes:
 * `delta:html` - When `src/index.html` changes, it is compiled as a Grunt
   template, so script names, etc., are dynamically replaced with the correct
   values configured dynamically by Grunt.
-* `delta:less` - When any `*.less` file within `src/` changes, the
-  `src/less/main.less` file is linted and copied into
+* `delta:less` - When any `*.scss` file within `src/` changes, the
+  `src/sass.scss` file is linted and copied into
   `build/assets/ng-boilerplate.css`.
 * `delta:jssrc` - When any JavaScript file within `src/` that does not end in
   `.spec.js` changes, all JavaScript sources are linted, all unit tests are run,

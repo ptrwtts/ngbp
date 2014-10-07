@@ -15,9 +15,7 @@ src/
   |- assets/
   |- common/
   |  |- plusOne/
-  |- less/
-  |  |- main.less
-  |  |- variables.less
+  |- sass.scss
   |- index.html
 ```
 
@@ -26,7 +24,7 @@ src/
 - `src/assets/` - static files like fonts and images that are copied over during build / compile 
 - `src/common/` - third-party libraries or components likely to be reused in
   another application. [Read more &raquo;](common/README.md)
-- `src/less/` - LESS CSS files. [Read more &raquo;](less/README.md)
+- `src/sass.scss` - Main SASS CSS file which imports all other files.
 - `src/index.html` - this is the HTML document of the single-page application.
   See below.
 
