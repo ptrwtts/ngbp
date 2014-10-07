@@ -363,7 +363,7 @@ module.exports = function ( grunt ) {
           '<%= vendor_files.css %>',
           '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css'
         ],
-        lr: [ 'http://localhost:35729/livereload.js' ]
+        lr: [ 'http://localhost:12345/livereload.js' ]
       },
 
       /**
@@ -416,7 +416,7 @@ module.exports = function ( grunt ) {
        * plugin should auto-detect.
        */
       options: {
-        livereload: true
+        livereload: 12345
       },
 
       /**
